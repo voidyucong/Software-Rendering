@@ -2104,11 +2104,8 @@ void screen_init(int w, int h, const char* title) {
         
 //        vector_set(&obj_nanosuit.pos, c2x, 0, c2z);
 //        obj_nanosuit.theta = angle(cam2.front.x, cam2.front.z, c2x, c2z);
-        // 设置旋转灯光
         vector_copy(&device.light[1].pos, &cam1.eye);
-//        vector_copy(&device.light[1].dir, &cam1.front);
         vector_set(&device.light[1].dir, -cam1.front.x, -cam1.front.y, -cam1.front.z);
-//        device.light[1].pos.y = 5;
         
         if (glfwGetKey(screen_handle, GLFW_KEY_W)) {
             vector_copy(&tempv, &cam1.front);
