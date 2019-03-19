@@ -1,4 +1,4 @@
-# Software-Rendering
+# Software-Render
 软渲染
 
 使用了两个外部库 `tinyobj_loader` 加载 obj 文件，`freeimage` 加载图片。
